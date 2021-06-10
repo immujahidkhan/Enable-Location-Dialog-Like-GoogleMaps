@@ -46,10 +46,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        this.txtContinueLocation = (TextView) findViewById(R.id.txtContinueLocation);
-        this.btnContinueLocation = (Button) findViewById(R.id.btnContinueLocation);
-        this.txtLocation = (TextView) findViewById(R.id.txtLocation);
-        this.btnLocation = (Button) findViewById(R.id.btnLocation);
+        this.txtContinueLocation = findViewById(R.id.txtContinueLocation);
+        this.btnContinueLocation = findViewById(R.id.btnContinueLocation);
+        this.txtLocation = findViewById(R.id.txtLocation);
+        this.btnLocation = findViewById(R.id.btnLocation);
 
         mFusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
 
